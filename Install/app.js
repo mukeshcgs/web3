@@ -54,8 +54,8 @@ web3.eth.getTransactionCount(account2, (err, txCount) => {
 
     const serializedTransaction = tx.serialize()
     const raw = '0x' + serializedTransaction.toString('hex')
-    console.log(web3.eth);
+    // console.log(web3.eth);
 
     //Broadcast
-    // web3.eth.sendSignedTransaction(raw)
+    web3.eth.sendSignedTransaction(raw)
 })
